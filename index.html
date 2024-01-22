@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky tiles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .header,
+        .footer {
+            background-color: rgb(36, 28, 36);
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+    
+
+        .box {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        h1{
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.575);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Header</div>
+
+    <div>
+        <div class="box" style=" background-image: url('iuliu-illes-M6c_PcgArFw-unsplash.jpg');"><h1>Tree</h1></div>
+        <div class="box" style="background-image: url('jakub-dziubak-XtUd5SiX464-unsplash.jpg')"><h1>Coffee</h1></div>
+        <div class="box" style=" background-image: url('sayan-majhi-BY5GHhZPFpc-unsplash.jpg')"><h1>NoteBook</h1></div>
+        <div class="box" style=" background-image: url('sayan-majhi-FFMcFwIUM5Y-unsplash.jpg')"><h1>Headphone</h1></div>
+
+    </div>
+
+    <div class="footer">Footer</div>
+</body>
+
+</html>
